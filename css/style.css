@@ -182,7 +182,7 @@ body {
 }
 
 #hero {
-  min-height: calc(50vh - 60px);
+  min-height: calc(60vh - 60px);
   background-color: var(--color-grey);
   margin: 0 auto;
   max-width: 144rem;
@@ -297,7 +297,7 @@ body {
 .house-img {
   padding: 4rem;
   width: 100%;
-  height: 40vh;
+  height: 70vh;
 }
 
 .product1,
@@ -312,7 +312,6 @@ body {
 
 .product1 {
   background-color: var(--color-grey);
-  padding-top: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,9 +450,59 @@ body {
 }
 
 .product2 {
-  border: 1px solid red;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
+.product2-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 30rem;
+  height: 20rem;
+}
+
+/*----------------------------TYPOGRAPHY------------------------------------*/
+.heading-4 {
+  letter-spacing: 1px;
+  font-family: "AvantGarde", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: initial;
+  font-size: 1.8rem;
+  color: var(--color-text-3);
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  letter-spacing: 1px;
+  font-family: "AvantGarde", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: initial;
+  font-size: 1.3rem;
+  color: var(--color-text-2);
+  letter-spacing: 1px;
+}
+
+/*----------------------------TYPOGRAPHY------------------------------------*/
 .card-container {
   background-color: #020202;
   padding: 4rem;
