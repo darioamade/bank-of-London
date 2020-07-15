@@ -155,7 +155,9 @@ body {
 }
 ////////////////////////////////////////////////////////////////
 #hero,
-#hero-1 {
+#hero-1,
+#hero-2,
+#hero-3 {
   min-height: calc(60vh - 60px);
   background-color: var(--color-grey);
   margin: 0 auto;
@@ -171,6 +173,17 @@ body {
   min-height: calc(80vh - 60px);
   z-index: 5;
 }
+#hero-2 {
+  background: url("/css/img/pig.jpg") center/cover no-repeat;
+  min-height: calc(80vh - 60px);
+  z-index: 5;
+}
+#hero-3 {
+  background: url("/css/img/1.jpg") center/cover no-repeat;
+  min-height: calc(80vh - 60px);
+  z-index: 5;
+}
+
 .hero-title {
   position: relative;
   height: 100%;
