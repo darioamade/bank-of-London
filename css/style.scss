@@ -36,7 +36,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  @media (max-width: 1000px) {
+    font-size: 52.5%;
+  }
+  @media (max-width: 850px) {
+    font-size: 45.5%;
+  }
 }
+
+
 
 body {
   background: var(--color-white);
@@ -51,7 +59,7 @@ body {
 }
 
 .navbar {
-  background-color: inherit;
+  background-color: var(--color-grey);
   position: sticky;
   width: 100%;
   top: 0;
@@ -74,11 +82,25 @@ body {
   justify-content: center;
   padding: 0rem 1.5rem;
   z-index: -1;
+  @media (max-width:1000px){
+    justify-content: space-between;
+    padding: 0rem 2.5rem;
+  }
 }
 
 .logo {
   height: 4rem;
   width: 24rem;
+  @media (max-width:1000px){
+    width: 20rem;
+  }
+  @media (max-width: 768px){
+    width: 16rem;
+  }
+  @media (max-width: 453px){
+    width: 12rem;
+    height: 3rem;
+  }
 }
 .nav-logo {
   flex: 0 0 20%;
@@ -88,7 +110,35 @@ body {
   flex: 1;
 }
 ///////////////////////////////////////////////////////////////
-.nav__list {
+
+.menu-hamburger {
+  position: relative;
+}
+
+.logoOn {
+
+  &-item {
+    background-color:red;
+    font-size: .5rem;
+  }
+
+}
+
+
+@media (min-width: 1000px){
+  nav .menu-hamburger,
+  .logoOn {
+    display: none;
+  }
+}
+
+  @media (max-width: 1000px){
+    nav .nav-links {
+      display: none;
+  }
+}
+.nav__list,
+.logoOn .nav__list{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -96,6 +146,9 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 8rem;
+}
+.logoOn .nav__list{
+  height: 2rem;
 }
 
 .nav__link {
@@ -109,6 +162,9 @@ body {
   font-weight: 500;
   font-size: 1rem;
   z-index: 1000;
+  @media (max-width: 1200px) {
+    padding: 3rem 1rem;
+  }
 
   &:before {
     content: "";
@@ -143,6 +199,13 @@ body {
   height: 8rem;
   color: var(--color-white);
 }
+#active2{
+
+ 
+
+}
+
+
 #deductive {
   background-color: transparent;
   height: 8rem;
@@ -458,3 +521,236 @@ body {
 #bgTransparent {
   background-color: transparent;
 }
+
+
+/* --------------- Hamburger -menu ---------------- */
+
+.menu-open {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0);
+  z-index: 10;
+}
+
+.menu-open span {
+  display: flex;
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  margin-top: 3px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  border-right: 1px solid black;
+  transition: all 0.5s;
+  z-index: 8000;
+}
+
+@media only screen and (max-width: 728px) {
+  .nav {
+    left: -100%;
+  }
+}
+
+.nav.active {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  border-right: 1px solid rgb(255, 251, 251);
+  transition: all 0.5s;
+  z-index: 8000;
+}
+
+@media only screen and (max-width: 728px) {
+  .nav.active {
+    width: 100%;
+  }
+}
+
+.nav ul {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  width: 80%;
+  text-align: center;
+  padding: 3rem;
+}
+
+/*---------------------------------------------------------*/
+
+.nav .nav-horizontal {
+  position: absolute;
+  top: 4%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.nav .nav-horizontal li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  background-color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.nav .nav-horizontal li a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+@media only screen and (max-width: 425px) {
+  .nav .nav-horizontal li a {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .nav .nav-horizontal li a {
+    font-size: 1.2rem;
+  }
+}
+
+.nav .nav-horizontal li a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.nav .nav-bottom {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.nav .nav-bottom {
+  position: absolute;
+  top: 95%;
+  right: 1%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+}
+
+.nav .nav-bottom li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------------*/
+
+.nav ul li {
+  margin-top: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 4.8rem;
+  background-color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+@media only screen and (max-width: 1167px) {
+  .nav ul li a {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav ul li a {
+    font-size: 3.4rem;
+    letter-spacing: 4px;
+  }
+}
+@media only screen and (max-width: 389px) {
+  .nav ul li a {
+    font-size: 2.4rem;
+  }
+}
+
+.menu-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.menu-close span {
+  display: flex;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.menu-close :nth-child(1) {
+  position: absolute;
+  left: -2px;
+  top: 7px;
+  transform: rotate(45deg);
+}
+
+.menu-close :nth-child(2) {
+  position: absolute;
+  left: -2px;
+  top: 7px;
+  transform: rotate(135deg);
+}
+
+.logo-center {
+  position: relative;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1372px) {
+  .logo-center {
+    left: 50%;
+  }
+}
+
+/* --------------- End of Navbar ---------------- */
