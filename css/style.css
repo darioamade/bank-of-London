@@ -695,7 +695,7 @@ body {
   left: 0%;
   width: 50%;
   height: 100vh;
-  background-color: black;
+  background-color: white;
   border-right: 1px solid #fffbfb;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -730,17 +730,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: black;
+  background-color: white;
   padding: 1rem 3rem;
   cursor: pointer;
 }
 
 .nav .nav-horizontal li a {
-  color: #fff;
+  color: #302f2f;
   text-decoration: none;
   font-family: inherit;
   font-size: 1.8rem;
-  background-color: black;
+  background-color: white;
   font-weight: 700;
   font-family: "Roboto";
   letter-spacing: 2px;
@@ -800,11 +800,11 @@ body {
 }
 
 .nav .nav-bottom li a {
-  color: #fff;
+  color: #2d2b2b;
   text-decoration: none;
   font-family: inherit;
   font-size: 1.6rem;
-  background-color: black;
+  background-color: white;
   font-weight: 500;
   font-family: "Roboto";
   letter-spacing: 2px;
@@ -824,11 +824,11 @@ body {
 }
 
 .nav ul li a {
-  color: #fff;
+  color: #323030;
   text-decoration: none;
   font-family: inherit;
   font-size: 4.8rem;
-  background-color: black;
+  background-color: white;
   font-weight: 600;
   font-family: "Roboto";
   letter-spacing: 2px;
@@ -863,7 +863,7 @@ body {
   right: 1rem;
   width: 18px;
   height: 18px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(31, 30, 30, 0);
   cursor: pointer;
 }
 
@@ -873,7 +873,7 @@ body {
   display: flex;
   width: 20px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #131313;
 }
 
 .menu-close :nth-child(1) {
