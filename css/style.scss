@@ -61,7 +61,8 @@ body {
 .navbar {
   background-color: var(--color-grey);
   position: sticky;
-  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
   top: 0;
   height: 8rem;
   position: relative;
@@ -269,6 +270,9 @@ body {
   font-size: 7rem;
   line-height: 1;
   margin-bottom: 1.5rem;
+  @media (max-width:650px){
+    font-size: 4rem;
+  }
 }
 
 .hero-title h3 {
@@ -281,6 +285,9 @@ body {
   letter-spacing: 1px;
   line-height: 1.2;
   margin-bottom: 2rem;
+  @media (max-width:650px){
+    margin-left: 10rem;
+  }
 }
 
 .hero-title a {
@@ -296,6 +303,9 @@ body {
   border-bottom: 2px solid rgb(111, 109, 109);
   width: 9rem;
   cursor: pointer;
+  @media (max-width:650px){
+    margin-left: 10rem;
+  }
 }
 
 ////////////////////////////////////////////////////////////////
@@ -400,6 +410,12 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 650px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+  }
 
   &_title-text {
     background-color: inherit;
@@ -409,6 +425,13 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     text-align: start;
+    border: 1px solid red;
+    @media (max-width: 650px) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
     p {
       font-size: 1.4rem;
       letter-spacing: 1px;
@@ -438,6 +461,9 @@ body {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 640px) {
+    padding-bottom: 4rem;
+  }
   &-text {
     display: flex;
     flex-direction: column;
@@ -445,6 +471,14 @@ body {
     align-items: flex-start;
     width: 30rem;
     height: 20rem;
+    border: 1px solid red;
+    @media (max-width: 640px) {
+      align-items: center;
+      align-content: center;
+      padding: 0 2rem;
+      width: 100%;
+      height: 20rem;
+    }
   }
 }
 /*----------------------------TYPOGRAPHY------------------------------------*/
@@ -478,13 +512,14 @@ body {
   // background: url("/css/img/card-black.png") center/cover no-repeat;
   padding: 4rem;
   position: relative;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  @media (max-width: 650px){
+    padding: 1rem;
+  }
 }
 .card-img {
   width: 100%;
   height: 70vh;
+  margin: 0 auto;
 }
 
 .card-1 {
@@ -506,6 +541,27 @@ body {
   box-shadow: 0 2rem 2rem rgba(128, 127, 127, 0.029);
 }
 
+.card-1,
+.card-2{
+  @media (max-width:650px){
+    width: 30rem;
+    height: 20rem;
+  }
+  @media (max-width:345px){
+    width: 20rem;
+    height: 14rem;
+    top: 30%;
+    left: 50%;
+  }
+}
+.card-2{
+  @media (max-width:345px){
+    width: 20rem;
+    height: 14rem;
+    top: 60%;
+    left: 50%;
+  }
+}
 #bgColorBlack {
   background-color: #000;
 }
