@@ -254,7 +254,7 @@ body {
   // flex: 1;
   // padding: 2rem 0rem;
   // padding: 4rem 8rem;
-  padding: 4rem;
+  padding: 10rem;
   width: 90vw;
   margin: 0 auto;
   max-width: 144rem;
@@ -274,6 +274,33 @@ body {
     font-size: 4rem;
   }
 }
+
+.hero-img-title {
+  margin: 0 auto;
+  padding: 0rem 2rem;
+  min-height: 12rem;
+  max-width: 140rem;
+  width:100%;
+  background-color: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  p{  
+    font-family: "AvantGarde", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 1.5rem;
+    color: #3f3e3e;
+    cursor: pointer;
+    }
+
+}
+
+#textlightGrey{
+  color: #8f8c8c;
+}
+
 
 .hero-title h3 {
   font-family: "AvantGarde", sans-serif;
@@ -335,9 +362,12 @@ body {
 }
 
 .house-img {
-  padding: 4rem;
+  padding: 0 4rem;
+  padding-top: 4rem;
   width: 100%;
   height: 70vh;
+
+
 }
 
 .product1,
@@ -1156,3 +1186,102 @@ pre {
   height: 3rem;
 }
 /*----------------------------------------------------------------*/
+.mortgage {
+  background-color: var(--color-grey);
+  width:100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+    h2{
+      font-family: "Roboto", sans-serif;
+      text-transform: initial;
+      font-size: 4.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #3f3e3e;
+      line-height: 1.6;
+      text-transform: initial;
+      text-align: center;
+
+      
+    }
+}
+
+.purchase {
+  width:100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  p{   
+    font-family: "Roboto", sans-serif;
+    text-transform: initial;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #4d4b4b;
+    line-height: 1.6;
+    text-transform: initial;
+    text-align: center; 
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+   }
+  
+}
+
+#pshade{
+  color: #807d7d;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.bar {
+  width:100%;
+  max-width: 600px;
+  padding: 0 20px;
+  height: 5vh ;
+}
+
+.bar-top,
+.bar-top-2  {
+  height: 2px;
+  width:100%;
+  width: 600px;
+  border-radius: 10rem;
+ position: relative;
+  background-color:#cacaca;
+}
+
+.bar-top::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width:20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  z-index: 2;
+  top: 50%;
+  right: 80%;
+  transform: translate(-50%,-50%);
+
+}
+
+.bar-top-2::after{
+  position: absolute;
+  content: "";
+  height: 20px;
+  width:20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  z-index: 2;
+  top: 50%;
+  right: 90%;
+  transform: translate(-50%,-50%);
+}
