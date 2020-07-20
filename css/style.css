@@ -573,7 +573,6 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: start;
-  border: 1px solid red;
 }
 
 @media (max-width: 650px) {
@@ -642,8 +641,6 @@ body {
           align-items: flex-start;
   width: 30rem;
   height: 20rem;
-  border: 1px solid red;
-  border: 1px solid blue;
 }
 
 @media (max-width: 640px) {
@@ -1053,7 +1050,7 @@ body {
   background-color: var(--color-grey);
   max-width: 144rem;
   margin: 0 auto;
-  padding: 0rem;
+  padding: 6rem 0rem;
 }
 
 .options-content {
@@ -1132,6 +1129,7 @@ body {
 /*-----------------------------------section-2 -----------------------------*/
 .section-2 {
   background-color: var(--color-grey);
+  padding: 8rem 2rem;
   margin: 0 auto;
   max-width: 144rem;
   display: -webkit-box;
@@ -1271,7 +1269,7 @@ pre {
 /*-----------------------------------section-3 -----------------------------*/
 .section-3 {
   background-color: var(--color-grey);
-  padding: 8rem 2rem;
+  padding: 10rem 2rem;
   margin: 0 auto;
   max-width: 144rem;
   display: -webkit-box;
@@ -1287,6 +1285,12 @@ pre {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+@media (max-width: 768px) {
+  .section-3-left {
+    display: none;
+  }
 }
 
 .section-3-right {
@@ -1343,8 +1347,9 @@ pre {
 
 /*-----------------------------------section-4 -----------------------------*/
 .section-4 {
+  background-color: var(--color-grey);
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 10rem 0;
   max-width: 144rem;
 }
 
@@ -1352,6 +1357,154 @@ pre {
   min-height: 50vh;
   max-width: 144rem;
   margin: 0 auto;
-  background: url("/css/img/wonan.jpg") center/cover no-repeat;
+  background: url("/css/img/photo-of-person-writing-on-notebook-3758899.jpg") center/cover no-repeat;
 }
+
+.compare-1 {
+  margin: 0 auto;
+  max-width: 144rem;
+  min-height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem;
+  padding-bottom: 8rem;
+}
+
+.compare-1 a, .compare-1 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #3a3939;
+  text-align: start;
+  cursor: pointer;
+}
+
+.compare-1 p {
+  font-weight: 400;
+}
+
+/****************************  Footer ************************************************/
+.footer {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: var(--color-grey);
+}
+
+.footer-content {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-down {
+  width: 25rem;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-down {
+    height: 30rem;
+    margin: 2rem auto;
+  }
+}
+
+.nav-down ul {
+  list-style: none;
+  color: #3f3e3e;
+}
+
+.nav-down ul li {
+  text-align: center;
+  padding: 1px;
+  font-family: "Roboto", sans-serif;
+  text-transform: initial;
+  font-size: calc(1.4 + 1.5vw);
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #3f3e3e;
+  line-height: 1.6;
+  cursor: pointer;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+}
+
+.nav-down ul li a:hover,
+.nav-down ul li a:active {
+  background-position: 100%;
+  color: #fafafa;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+}
+
+#show {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.copy-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.copy-title p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #3f3e3e;
+}
+
+.footer-logo {
+  width: 18rem;
+  height: 3rem;
+}
+
+/*----------------------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */

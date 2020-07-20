@@ -436,7 +436,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     text-align: start;
-    border: 1px solid red;
     @media (max-width: 650px) {
       justify-content: center;
       align-items: center;
@@ -482,8 +481,6 @@ body {
     align-items: flex-start;
     width: 30rem;
     height: 20rem;
-    border: 1px solid red;
-    border: 1px solid blue;
     @media (max-width: 640px) {
       align-items: center;
       align-content: center;
@@ -834,7 +831,7 @@ body {
   background-color: var(--color-grey);
   max-width: 144rem;
   margin: 0 auto;
-  padding: 0rem;
+  padding: 6rem 0rem;
   &-content{
     max-width: 144rem;
     margin: 0 auto;
@@ -888,10 +885,12 @@ body {
   }
 }
 
+
+
 /*-----------------------------------section-2 -----------------------------*/
 .section-2{
   background-color: var(--color-grey);
-  // padding: 2rem;
+ padding: 8rem 2rem;
   margin: 0 auto;
   max-width: 144rem;
   display: flex;
@@ -983,13 +982,16 @@ pre {
 /*-----------------------------------section-3 -----------------------------*/
 .section-3{
   background-color: var(--color-grey);
-  padding: 8rem 2rem;
+  padding: 10rem 2rem;
   margin: 0 auto;
   max-width: 144rem;
   display: flex;
   flex-direction:row;
   &-left{
     flex: 1;
+    @media (max-width:768px){
+      display: none;
+    }
   }
   &-right{
     flex: 1;
@@ -1033,15 +1035,124 @@ pre {
 /*-----------------------------------section-4 -----------------------------*/
 
 .section-4{
+  background-color: var(--color-grey);
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 10rem 0;
   max-width: 144rem;
   &-content{
     min-height: 50vh;
     max-width: 144rem;
     margin: 0 auto;
-    background: url("/css/img/wonan.jpg") center/cover no-repeat;
+    background: url("/css/img/photo-of-person-writing-on-notebook-3758899.jpg") center/cover no-repeat;
 
   }
 
 }
+
+.compare-1{
+  margin: 0 auto;
+  max-width: 144rem;
+  min-height: 2rem ;
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 0 2rem;
+  padding-bottom: 8rem ;
+  a ,p{
+    font-size:1.2rem;
+    font-weight:600;
+    letter-spacing:1px;
+    color: rgb(58, 57, 57);
+    text-align: start;
+    cursor: pointer;
+  }
+  p{    font-weight:400; }
+}
+
+
+/****************************  Footer ************************************************/
+.footer {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: var(--color-grey);
+}
+
+.footer-content {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-down {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  margin: 1rem auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  padding: 2rem;
+  // @media only screen and (max-width: 815px) {
+  //   width: 22rem;
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-down {
+    height: 30rem;
+    margin: 2rem auto;
+  }
+}
+
+.nav-down ul {
+  list-style: none;
+  color: #3f3e3e;
+}
+
+.nav-down ul li {
+  text-align: center;
+  padding: 1px;
+  font-family: "Roboto", sans-serif;
+  text-transform: initial;
+  font-size: calc(1.4 + 1.5vw);
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #3f3e3e;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+
+.nav-down ul li a:hover,
+.nav-down ul li a:active {
+  background-position: 100%;
+  color: #fafafa;
+  transform: translateX(1rem);
+}
+
+#show {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.copy-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.copy-title p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #3f3e3e;
+}
+.footer-logo {
+  width: 18rem;
+  height: 3rem;
+}
+/*----------------------------------------------------------------*/
