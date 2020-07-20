@@ -1048,4 +1048,112 @@ body {
 }
 
 /* --------------- End of Navbar ---------------- */
+/* --------------- SECTIONS OPTIONS ---------------- */
+.options {
+  background-color: inherit;
+  padding: 0rem;
+}
+
+.options-content {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.options-content-1 {
+  max-width: 144rem;
+  min-height: 2rem;
+}
+
+.options-content-1-top {
+  max-width: 144rem;
+  min-height: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.options-content-1-top h3, .options-content-1-top p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #3a3939;
+}
+
+.options-content-1-top h4 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #3a3939;
+  text-align: start;
+}
+
+.options-content-1-top p {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.compare {
+  margin: 0 auto;
+  max-width: 144rem;
+  min-height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.compare a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #3a3939;
+  text-align: start;
+  cursor: pointer;
+}
+
+/*-----------------------------------section-2 -----------------------------*/
+.section-2 {
+  background-color: red;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 144rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-2-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
