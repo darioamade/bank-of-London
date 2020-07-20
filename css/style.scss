@@ -369,6 +369,16 @@ body {
       align-items: center;
       text-align: center;
     }
+    @media (max-width: 320px){
+      font-size: 1.4rem;
+      padding-left: 0rem;
+      justify-content: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 25rem;
+   
+     
+    } 
   }
   &_title-text {
     background-color: inherit;
@@ -387,7 +397,9 @@ body {
       font-weight: 600;
       line-height: 1.3;
       text-transform: initial;
-      @media (max-width: 1000px) {
+      @media (max-width: 350px) {
+        font-size: 2.2rem;
+        width: 25rem;
       }
     }
   }
@@ -402,6 +414,7 @@ body {
 }
 .product4 {
   background: url("/css/img/wonan.jpg") center/cover no-repeat;
+
 }
 
 .product3 {
@@ -414,9 +427,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
- 
   }
-
   &_title-text {
     background-color: inherit;
     height: 100%;
@@ -430,7 +441,7 @@ body {
       justify-content: center;
       align-items: center;
       text-align: center;
-      width: 100%;
+      width: 80%;
     }
     p {
       font-size: 1.4rem;
@@ -472,12 +483,19 @@ body {
     width: 30rem;
     height: 20rem;
     border: 1px solid red;
+    border: 1px solid blue;
     @media (max-width: 640px) {
       align-items: center;
       align-content: center;
       padding: 0 2rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media (max-width: 489px){
       width: 100%;
-      height: 20rem;
+    }
+    @media (max-width: 319px){
+      width: 80%;
     }
   }
 }
