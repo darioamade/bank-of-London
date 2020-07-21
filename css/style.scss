@@ -1191,7 +1191,7 @@ pre {
   width:100%;
   max-width: 144rem;
   margin: 0 auto;
-  padding: 0 5vh;
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1210,6 +1210,8 @@ pre {
       
     }
 }
+
+
 
 .purchase {
   width:100%;
@@ -1232,6 +1234,10 @@ pre {
     margin-bottom: 2rem;
    }
   
+}
+
+.options-content{
+  padding: 0 6rem;
 }
 
 #pshade{
@@ -1284,4 +1290,64 @@ pre {
   top: 50%;
   right: 90%;
   transform: translate(-50%,-50%);
+}
+.options-content-1-top{
+  position: relative;
+}
+#tax,
+#rate,
+#apr,
+#prices,
+#monthly,
+#tax1{
+  font-size:1.6rem;
+  font-weight: 500;
+  position: relative;
+}
+
+#rate::after ,
+#apr::after ,
+#prices::after,
+#monthly::after{
+  position: absolute;
+  content: "Rate";
+  top: -70%;
+  right: 0%;
+  transform: translate(-50%,-50%);
+  font-size:1.6rem;
+  font-weight: 700;
+  letter-spacing:1px;
+  line-height: 1.6;
+}
+
+#apr::after {
+  content: "APR";
+}
+#prices::after{
+  content: "Prices";
+  right: -50%;
+}
+#monthly::after{
+  content: "monthly";
+  right: -70%;
+  
+}
+.compare-2{
+  margin: 0 auto;
+  max-width: 144rem;
+  padding: 2rem 6rem;
+  min-height: 2rem ;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  padding-bottom: 8rem ;
+  a {
+    font-size:1.2rem;
+    font-weight:500;
+    line-height: 2;
+    letter-spacing:1px;
+    color: rgb(87, 84, 84);
+    text-align: start;
+    cursor: pointer;
+  }
 }
