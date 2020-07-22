@@ -80,20 +80,23 @@ body {
 
 .navbar {
   background-color: var(--color-grey);
+  position: fixed;
   position: -webkit-sticky;
   position: sticky;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
   max-width: 144rem;
   margin: 0 auto;
-  top: 0;
   height: 8rem;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
+  z-index: 199;
   padding: 1rem 0rem;
 }
 
@@ -116,7 +119,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0rem 1.5rem;
-  z-index: -1;
+  z-index: 1;
 }
 
 @media (max-width: 1000px) {

@@ -55,14 +55,14 @@ menuClose.addEventListener("click", menuTog);
 
 function menuTog(e) {
   nav.classList.toggle("active");
-};
+}
 
-
-
-setInterval(()=> {
-  document.getElementsByTagName('progress')[0].value = 
-  document.getElementsByTagName('progress')[0].value + 1
-  if(document.getElementsByTagName('progress')[0].value === 10){
-   document.getElementsByTagName('progress')[0].value = 1
+setInterval(() => {
+  document.getElementsByTagName("progress")[0].value =
+    document.getElementsByTagName("progress")[0].value + 1;
+  if (document.getElementsByTagName("progress")[0].value === 10) {
+    document.getElementsByTagName("progress")[0].value = 1;
   }
 }, 250);
+
+
