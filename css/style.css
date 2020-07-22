@@ -1562,7 +1562,8 @@ pre {
 }
 
 /*----------------------------------------------------------------*/
-.mortgage {
+.mortgage,
+.mortgage-auto {
   background-color: var(--color-grey);
   width: 100%;
   max-width: 144rem;
@@ -1583,7 +1584,8 @@ pre {
           align-items: flex-start;
 }
 
-.mortgage h2 {
+.mortgage h2,
+.mortgage-auto h2 {
   font-family: "Roboto", sans-serif;
   text-transform: initial;
   font-size: 4.8rem;
@@ -1593,6 +1595,26 @@ pre {
   line-height: 1.6;
   text-transform: initial;
   text-align: center;
+}
+
+.mortgage h3,
+.mortgage-auto h3 {
+  font-family: "Roboto", sans-serif;
+  text-transform: initial;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-left: 2rem;
+  letter-spacing: 0px;
+  color: #ffffff;
+  line-height: 1.6;
+  text-transform: initial;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mortgage-auto {
+  background-color: #1c1c1c;
+  padding: 10rem 4rem;
 }
 
 .purchase {
@@ -1627,14 +1649,129 @@ pre {
   margin-bottom: 2rem;
 }
 
+.purchase-2,
+.purchase-3 {
+  padding: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.purchase-3 {
+  padding: 2rem 4rem;
+}
+
+.purchase-3-amount-per {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.purchase-3-calculation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.purchase-3-calculation-calc {
+  font-family: "Roboto", sans-serif;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #e1dddd;
+  line-height: 1.6;
+}
+
+.amounts {
+  font-family: "Roboto", sans-serif;
+  text-transform: initial;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  line-height: 1.6;
+  position: relative;
+}
+
+.amounts::before {
+  position: absolute;
+  content: " 60 months 2.99%APR";
+  font-size: 1rem;
+  color: #d2cdcd;
+  font-weight: 400;
+  line-height: 1.2;
+  top: 60%;
+  left: 170%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10rem;
+}
+
 .options-content {
   padding: 0 6rem;
 }
 
 #pshade {
   color: #807d7d;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+#pshade:hover {
+  color: #e6e1e1;
+}
+
+#pshade-3,
+#pshade-4 {
+  color: #e6e1e1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#pshade-4 {
+  color: #878383;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+#colorWhite {
+  color: #fff;
 }
 
 .bar {
