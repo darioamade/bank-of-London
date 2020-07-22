@@ -63,8 +63,7 @@ body {
   color: var(--color-txt-2);
   position: relative;
   margin: 0 auto;
- }
-
+}
 
 .navbar {
   background-color: var(--color-grey);
@@ -212,6 +211,7 @@ body {
   color: var(--color-white);
 }
 #active2 {
+  background-color: transparent;
 }
 
 #deductive {
@@ -339,7 +339,12 @@ body {
     margin-left: 10rem;
   }
 }
-
+#home {
+  color: #fff;
+}
+#home1 {
+  color: rgb(11, 11, 11);
+}
 ////////////////////////////////////////////////////////////////
 
 .home-intro {
@@ -863,8 +868,8 @@ body {
 /* --------------- End of Navbar ---------------- */
 /* --------------- SECTIONS OPTIONS ---------------- */
 
-.options ,
-.options-2{
+.options,
+.options-2 {
   background-color: var(--color-grey);
   max-width: 144rem;
   margin: 0 auto;
@@ -905,7 +910,7 @@ body {
   }
 }
 
-.options-2{
+.options-2 {
   background-color: #1c1c1c;
 }
 .compare {
@@ -1213,7 +1218,7 @@ pre {
     text-transform: initial;
     text-align: center;
   }
-  h3{
+  h3 {
     font-family: "Roboto", sans-serif;
     text-transform: initial;
     font-size: 2.2rem;
@@ -1229,7 +1234,7 @@ pre {
 }
 
 .mortgage-auto {
-  background-color:#1c1c1c;
+  background-color: #1c1c1c;
   padding: 10rem 4rem;
 }
 
@@ -1256,34 +1261,34 @@ pre {
 }
 
 .purchase-2,
-.purchase-3{
-  padding: 4rem ;
+.purchase-3 {
+  padding: 4rem;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
   @media (max-width: 650px) {
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     margin: 2rem;
   }
 }
 
-.purchase-3{
-  padding: 2rem 4rem ;
-  &-amount-per{
+.purchase-3 {
+  padding: 2rem 4rem;
+  &-amount-per {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    align-items:flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
-  &-calculation{
+  &-calculation {
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
-    align-items:flex-end;
-    &-calc{
+    justify-content: flex-end;
+    align-items: flex-end;
+    &-calc {
       font-family: "Roboto", sans-serif;
       text-transform: initial;
       font-size: 1.2rem;
@@ -1295,8 +1300,7 @@ pre {
   }
 }
 
-
-.amounts{
+.amounts {
   font-family: "Roboto", sans-serif;
   text-transform: initial;
   font-size: 6rem;
@@ -1307,7 +1311,7 @@ pre {
   position: relative;
 }
 
-.amounts::before{
+.amounts::before {
   position: absolute;
   content: " 60 months 2.99%APR";
   font-size: 1rem;
@@ -1328,31 +1332,28 @@ pre {
   color: #807d7d;
   font-size: 1.4rem;
   font-weight: 500;
-  transition: all .2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
-#pshade:hover{
+#pshade:hover {
   color: #e6e1e1;
 }
 
-
-
 #pshade-3,
-#pshade-4{
+#pshade-4 {
   color: #e6e1e1;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
 }
 
-#pshade-4{
+#pshade-4 {
   color: #878383;
   font-weight: 400;
   font-size: 1.1rem;
 }
-#colorWhite{
+#colorWhite {
   color: #fff;
-
 }
 
 .bar {
@@ -1413,34 +1414,31 @@ pre {
   position: relative;
 }
 
-#tax-2{
+#tax-2 {
   font-size: 1.4rem;
   font-weight: 500;
   position: relative;
   color: #ebe8e8;
   width: 25%;
-  @media (max-width:700px){
+  @media (max-width: 700px) {
     width: 85%;
   }
-
 }
-#tax-3{
+#tax-3 {
   font-size: 1.1rem;
   font-weight: 500;
   position: relative;
   color: #c2c0c0;
   width: 60%;
-  @media (max-width:700px){
+  @media (max-width: 700px) {
     display: none;
   }
-  
 }
-#tax-4{
+#tax-4 {
   color: #c2c0c0;
   font-size: 2.5rem;
   font-weight: 500;
 }
-
 
 #rate::after,
 #apr::after,
@@ -1610,90 +1608,87 @@ pre {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    @media (max-width:650px){
+    @media (max-width: 650px) {
       flex-direction: column;
     }
-    &-left{
+    &-left {
       flex: 1;
-      width:100%;
+      width: 100%;
       min-height: 70vh;
       display: flex;
-      flex-direction:column;
+      flex-direction: column;
       &-card1 {
         flex: 1;
         display: flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         padding: 4rem 2rem;
       }
       &-card2 {
         flex: 1;
         display: flex;
-        flex-direction:column;
-        justify-content:center;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-
       }
     }
-    &-right{
+    &-right {
       flex: 1;
-      width:100%;
+      width: 100%;
       min-height: 70vh;
       display: flex;
-      flex-direction:column;
-      justify-content:space-between;
-      align-items:flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
       padding: 6rem 2rem;
     }
   }
 }
-.hero-cards-content-right{
+.hero-cards-content-right {
   display: flex;
-  @media (max-width:650px){
-    flex-direction:column;
-    width:100%;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    width: 100%;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     text-align: center;
   }
-
 }
 
-.hero-cards-content-right-title2{
-  width:70%;
+.hero-cards-content-right-title2 {
+  width: 70%;
   display: flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-    @media (max-width:650px){
-      flex-direction:column;
-      width:100%;
-      justify-content:center;
-    }
-
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
 }
 .cards-score {
   width: 30rem;
   height: 10rem;
   display: flex;
-  flex-direction:row;
-  justify-content:space-between;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: .5rem ;
+  padding: 0.5rem;
 }
 
 .stars {
   display: flex;
 }
 
-.hero-cards-img{
+.hero-cards-img {
   width: 30rem;
   height: 20rem;
   box-shadow: 0 2rem 2rem rgba(177, 174, 174, 0);
 }
 
-.icon-box{
+.icon-box {
   width: 1.5rem;
   height: 1.5rem;
   fill: rgb(232, 169, 11);
@@ -1705,8 +1700,7 @@ pre {
   color: rgb(155, 151, 151);
   font: 1.6rem;
   font-weight: 600;
-  letter-spacing:1px;
-
+  letter-spacing: 1px;
 }
 
 .hero-cards-content-right h2 {
@@ -1715,17 +1709,15 @@ pre {
   letter-spacing: 1px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-
 }
 
-.hero-cards-content-right a{
+.hero-cards-content-right a {
   color: rgb(201, 197, 197);
   font-size: 1.8rem;
   letter-spacing: 1px;
   font-weight: 600;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
-
 }
 
 .hero-cards-content-right p {
@@ -1734,130 +1726,128 @@ pre {
   font-weight: 400;
   letter-spacing: 1px;
   font-family: "Roboto", sans-serif;
-
 }
 
 /*---------------------------payment----------------------------------*/
 
-.payment{
+.payment {
   padding: 6rem 2rem;
   background: url("/css/img/card-2988232.jpg") center/cover no-repeat;
   max-width: 144rem;
   margin: 0 auto;
-  min-height: 70vh ;
+  min-height: 70vh;
   position: relative;
   z-index: 1;
   &-content {
-    background-color:var(--color-red);
-    width:80%;
+    background-color: var(--color-red);
+    width: 80%;
     min-height: 30rem;
     position: absolute;
-    bottom:0%;
+    bottom: 0%;
     right: 0%;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     padding: 0 1rem;
     z-index: 10;
-    @media (max-width:600px){
-      width:100%;
+    @media (max-width: 600px) {
+      width: 100%;
       min-height: 40rem;
     }
-        h2{
-          color: rgb(232, 227, 227);
-          font-size: 2.6rem;
-          letter-spacing: 1px;
-          font-weight: 700;
-          font-family: "Roboto", sans-serif;
-          &-preferred{
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-            align-items:center;
-            margin-bottom: 2rem;
-            &-title{
-              flex: 0 0  80%;
-              width: 100%;
-              display: flex;
-              flex-direction: row;
-              justify-content:space-between;
-              align-items:center;
-            }
-          }
+    h2 {
+      color: rgb(232, 227, 227);
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      &-preferred {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        &-title {
+          flex: 0 0 80%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
       }
+    }
   }
 }
 
-
-.payment-content-preferred-title{
-  flex: 0 0  80%;
+.payment-content-preferred-title {
+  flex: 0 0 80%;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  align-items:center;
-    &-r{
-      width: 100%;
-      height: 100%;
-      flex:1;
-      display: flex;
-      justify-content:flex-start;
-      align-items:flex-start;
- 
-      p{
-        color: rgb(232, 227, 227);
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        font-weight: 300;
-        font-family: "Roboto", sans-serif;
-        width:70%;
-      }   
-    
-  }
-  &-l{
+  justify-content: space-between;
+  align-items: center;
+  &-r {
     width: 100%;
     height: 100%;
-    flex:1;
+    flex: 1;
     display: flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-        p {
-          color: rgb(232, 227, 227);
-          font-size: 1.2rem;
-          letter-spacing: 1px;
-          font-weight: 300;
-          font-family: "Roboto", sans-serif;
-          width:70%;
-        }
-    
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    p {
+      color: rgb(232, 227, 227);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      width: 70%;
+    }
+  }
+  &-l {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    p {
+      color: rgb(232, 227, 227);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      width: 70%;
+    }
   }
 }
 
-.learnmore{
+.learnmore {
   padding: 8rem 2rem;
   background-color: var(--color-grey);
   max-width: 144rem;
   margin: 0 auto;
-  &-link{
-      display: flex;
-      justify-content:center;
-      align-items: center;
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  a{
-    text-align:center;
+  a {
+    text-align: center;
     color: rgb(85, 83, 83);
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 1px;
     font-family: "Roboto", sans-serif;
-
   }
-
 }
 
-#navBarClr{
+#navBarClr {
   background-color: #1c1c1c;
+  color: #fff;
+}
+
+#clrWhiteList {
   color: #fff;
 }
 
@@ -1872,34 +1862,34 @@ pre {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     padding: 10rem 2rem 0 2rem;
   }
-  &-1{
+  &-1 {
     flex: 1;
-    width:100%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    @media (max-width: 768px){
-      justify-content:center;
-      align-items:center;
+    @media (max-width: 768px) {
+      justify-content: center;
+      align-items: center;
     }
-    h1{
+    h1 {
       font-family: "AvantGarde", sans-serif;
       font-weight: 700;
       font-size: 7.5rem;
       line-height: 1;
-      letter-spacing:1px;
+      letter-spacing: 1px;
       margin-bottom: 1.5rem;
       @media (max-width: 650px) {
         font-size: 4rem;
       }
     }
-    a{
-      text-align:center;
+    a {
+      text-align: center;
       color: rgb(210, 206, 206);
       font-size: 1.4rem;
       font-weight: 500;
@@ -1907,199 +1897,249 @@ pre {
       font-family: "Roboto", sans-serif;
       margin-bottom: 3rem;
     }
-  
-         
   }
 
-  &-2{
+  &-2 {
     flex: 1;
-    width:100%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    align-items:flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
     @media (max-width: 700px) {
       flex-direction: column;
-      justify-content:flex-end;
-      width:100%;
+      justify-content: flex-end;
+      width: 100%;
     }
 
-
-    &-right{
+    &-right {
       padding: 5rem 0;
-      flex:0 0 35%;
-      width:100%;
+      flex: 0 0 35%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       position: relative;
-      @media (max-width:1193px){
-        flex:0 0 50%;
+      @media (max-width: 1193px) {
+        flex: 0 0 50%;
       }
-   
-   
     }
-    &-left{
+    &-left {
       padding: 4rem 0;
-      flex:0 0 65%;
-      width:100%;
+      flex: 0 0 65%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      align-items:flex-end;
-      @media (max-width:1193px){
-        flex:0 0 50%;
+      align-items: flex-end;
+      @media (max-width: 1193px) {
+        flex: 0 0 50%;
       }
       @media (max-width: 700px) {
-        justify-content:center;
-        align-items:center;
+        justify-content: center;
+        align-items: center;
       }
-   
     }
-    
-    
   }
 }
 
 .dealer-1,
 .dealer-2,
-.dealer-3{
+.dealer-3 {
   position: relative;
   font-family: "AvantGarde", sans-serif;
   font-weight: 200;
   font-size: 1.1rem;
   line-height: 1;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   color: rgb(174, 170, 170);
-
 }
 
-.dealer-1::after ,
+.dealer-1::after,
 .dealer-2::after,
-.dealer-3::after{
+.dealer-3::after {
   position: absolute;
-  content: '2.99%APR';
+  content: "2.99%APR";
   font-family: "AvantGarde", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   color: rgb(255, 255, 255);
   top: 300%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media (max-width:1318px){
+  @media (max-width: 1318px) {
     font-size: 1.2rem;
   }
-
 }
 
-.dealer-2::after{
-  content: '3.49%APR';
+.dealer-2::after {
+  content: "3.49%APR";
 }
-.dealer-3::after{
-  content: '3.99%APR';
+.dealer-3::after {
+  content: "3.99%APR";
 }
 
-.dealer-4{
+.dealer-4 {
   color: rgb(220, 215, 215);
   font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing:0px;
+  letter-spacing: 0px;
   text-align: right;
-
 }
 
 /********************** car-model****************/
 .car-model {
   background-color: #1c1c1c;
   padding: 0 6rem;
-  width:100%;
+  width: 100%;
   display: flex;
-  flex-direction:row;
-  @media (max-width: 650px){
-    flex-direction:column;
+  flex-direction: row;
+  @media (max-width: 650px) {
+    flex-direction: column;
   }
-  &-title{
+  &-title {
     flex: 0 0 40%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    @media (max-width: 650px){
+    @media (max-width: 650px) {
       justify-content: center;
       align-items: center;
       text-align: center;
     }
-    h3{
+    h3 {
       font-family: "AvantGarde", sans-serif;
       font-size: 3rem;
       font-weight: 500;
       line-height: 1.6;
-      letter-spacing:1px;
+      letter-spacing: 1px;
       color: rgb(233, 231, 231);
       margin-bottom: 3rem;
     }
-    p{
+    p {
       font-family: "AvantGarde", sans-serif;
       font-size: 1.3rem;
       font-weight: 500;
       line-height: 1.6;
-      letter-spacing:1px;
+      letter-spacing: 1px;
       color: rgb(203, 198, 198);
-      width:70%;
+      width: 70%;
       margin-bottom: 3rem;
     }
   }
-  &-img{
+  &-img {
     flex: 0 0 60%;
     background: url("/css/img/merc.jpg") center/cover no-repeat;
     min-height: 30vh;
   }
 }
 
-
 .applynow {
   background-color: #1c1c1c;
-  padding: 6rem 0 0 0 ;
-  width:100%;
+  padding: 6rem 0 0 0;
+  width: 100%;
   display: flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  h2{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
     font-family: "AvantGarde", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.6;
-    letter-spacing:1px;
+    letter-spacing: 1px;
     color: rgb(172, 168, 168);
-
   }
-
 }
-
 
 .getStarted-1 {
   font-family: "AvantGarde", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.6;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   color: rgb(235, 232, 232);
 }
 #colorBgChanger {
   background-color: #1c1c1c;
-  color: rgb(255, 255, 255);
 }
 
 #colorWhite {
- color: #fff;
+  color: #fff;
 }
 
 #colorBgWhite {
   background-color: #ffffff;
+}
 
+/****************cards-options****************/
+.cards-options {
+  padding: 4rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @media (max-width:650px){
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    padding: 4rem 0;
+    font-family: "AvantGarde", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    color: rgb(55, 55, 55);
+    width: 50%;
+    position: relative;
+    @media (max-width:650px){
+      width: 90%;
+    }
+  }
+  .cards-options-title::after {
+    position: absolute;
+    content: " Drag →";
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(55, 55, 55);
+    letter-spacing: 1px;
+    width: 100%;
+    top: 50%;
+    left: 160%;
+    transform: translate(-50%, -50%);
+    @media (max-width:650px){
+     display: none;
+  }
+  }
+
+  .cards-options-cards::-webkit-scrollbar {
+    display: none;
+  }
+  &-cards {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+  }
+}
+
+.card-show {
+  margin: 4rem;
+  width: 40rem;
+  height: 25rem;
+  box-shadow: 0 2rem 2rem rgba(128, 127, 127, 0.029);
+  @media (max-width: 650px) {
+    width: 30rem;
+    height: 20rem;
+  }
 }

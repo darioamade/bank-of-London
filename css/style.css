@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-white: #fff;
   --color-grey: #f2f2f2;
@@ -265,6 +266,10 @@ body {
   color: var(--color-white);
 }
 
+#active2 {
+  background-color: transparent;
+}
+
 #deductive {
   background-color: transparent;
   height: 8rem;
@@ -421,6 +426,14 @@ body {
   .hero-title a {
     margin-left: 10rem;
   }
+}
+
+#home {
+  color: #fff;
+}
+
+#home1 {
+  color: #0b0b0b;
 }
 
 .home-intro {
@@ -1777,8 +1790,8 @@ pre {
   color: #807d7d;
   font-size: 1.4rem;
   font-weight: 500;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -2273,7 +2286,7 @@ pre {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .stars {
@@ -2398,8 +2411,8 @@ pre {
 
 .payment-content h2-preferred-title {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0  80%;
-          flex: 0 0  80%;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2418,8 +2431,8 @@ pre {
 
 .payment-content-preferred-title {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0  80%;
-          flex: 0 0  80%;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2518,6 +2531,10 @@ pre {
 
 #navBarClr {
   background-color: #1c1c1c;
+  color: #fff;
+}
+
+#clrWhiteList {
   color: #fff;
 }
 
@@ -2723,7 +2740,7 @@ pre {
 .dealer-2::after,
 .dealer-3::after {
   position: absolute;
-  content: '2.99%APR';
+  content: "2.99%APR";
   font-family: "AvantGarde", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
@@ -2745,11 +2762,11 @@ pre {
 }
 
 .dealer-2::after {
-  content: '3.49%APR';
+  content: "3.49%APR";
 }
 
 .dealer-3::after {
-  content: '3.99%APR';
+  content: "3.99%APR";
 }
 
 .dealer-4 {
@@ -2882,7 +2899,6 @@ pre {
 
 #colorBgChanger {
   background-color: #1c1c1c;
-  color: white;
 }
 
 #colorWhite {
@@ -2891,5 +2907,108 @@ pre {
 
 #colorBgWhite {
   background-color: #ffffff;
+}
+
+/****************cards-options****************/
+.cards-options {
+  padding: 4rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 650px) {
+  .cards-options {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.cards-options-title {
+  padding: 4rem 0;
+  font-family: "AvantGarde", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: #373737;
+  width: 50%;
+  position: relative;
+}
+
+@media (max-width: 650px) {
+  .cards-options-title {
+    width: 90%;
+  }
+}
+
+.cards-options .cards-options-title::after {
+  position: absolute;
+  content: " Drag →";
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #373737;
+  letter-spacing: 1px;
+  width: 100%;
+  top: 50%;
+  left: 160%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 650px) {
+  .cards-options .cards-options-title::after {
+    display: none;
+  }
+}
+
+.cards-options .cards-options-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-options-cards {
+  min-height: 40vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+}
+
+.card-show {
+  margin: 4rem;
+  width: 40rem;
+  height: 25rem;
+  -webkit-box-shadow: 0 2rem 2rem rgba(128, 127, 127, 0.029);
+          box-shadow: 0 2rem 2rem rgba(128, 127, 127, 0.029);
+}
+
+@media (max-width: 650px) {
+  .card-show {
+    width: 30rem;
+    height: 20rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

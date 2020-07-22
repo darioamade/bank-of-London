@@ -24,7 +24,7 @@
     <script src="/js/anim.js" defer></script> 
   </head>
   <body id="bgColorBlack">
-    <nav id="colorBgChanger" class="navbar">
+    <!-- <nav id="colorBgChanger" class="navbar">
       <div id="colorBgChanger" class="navbar-central">
         <div class="menu-hamburger">
           <div id="colorBgWhite" class="menu-open">
@@ -116,7 +116,107 @@
           </ul>
         </nav>
       </div>
+    </nav> -->
+    <nav class="navbar" id="colorBgChanger">
+      <div class="navbar-central" id="colorBgChanger">
+        <div class="menu-hamburger">
+          <div class="menu-open" id="colorBgWhite">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="nav">
+            <nav class="menu-close">
+              <span></span>
+              <span></span>
+            </nav>
+            <ul>
+              <li><a href="cards.html">Credits Cards</a></li>
+              <li><a href="index2.html">Home Loans</a></li>
+              <li><a href="index3.html">Auto Loans</a></li>
+              <li><a href="index4.html">Personal</a></li>
+              <li><a href="index5.html">Savings</a></li>
+              <li><a href="index6.html">Small Business</a></li>
+              <li><a href="index.html">Checking</a></li>
+              <li><a href="#">Investing</a></li>
+            </ul>
+            <ul class="nav-horizontal">
+                <li><a href="/index.html">Home</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="/sign.html">Sign in</a></li>
+            </ul>
+            <ul class="nav-bottom">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a>  <img
+                onclick="location.href='index.html';"
+                style="cursor: pointer;"
+                src="/css/img/logo4.png"
+                alt="bank logo"
+                class="logo"
+              /></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-logo">
+          <img
+            onclick="location.href='index.html';"
+            style="cursor: pointer;"
+            src="/css/img/logo4.png"
+            alt="bank logo"
+            class="logo"
+          />
+        </div>
+        <div class="logoOn">
+          <ul class="nav__list">
+            <li  class="logoOn-item">
+              <a href="#"  id="active2"  class="nav__link"> Sign in</a>
+              <!-- <a href="#"  id="active2"  class="nav__link"> Sign in</a> -->
+            </li>
+          </ul>
+     
+        </div>
+        <nav class="nav-links">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <li class="nav__list-item">
+                <li class="nav__list-item">
+                  <a id="clrWhiteList" href="index.html" class="nav__link">Checking</a>
+                </li>
+                <a  href="cards.html" class="nav__link" id="active" >Credits Cards </a>
+              </li>
+              <li class="nav__list-item">
+                <a id="home" href="/index2.html" class="nav__link"> Home Loans</a>
+              </li>
+              <li class="nav__list-item">
+                <a id="clrWhiteList" href="index3.html" class="nav__link">Auto Loans</a>
+              </li>
+              <a id="clrWhiteList" href="/index.html" class="nav__link">Personal</a>
+            </li>
+            <li class="nav__list-item">
+              <a id="clrWhiteList" href="index5.html" class="nav__link">Savings</a>
+            </li>
+            <li class="nav__list-item">
+              <a id="clrWhiteList" href="index6.html" class="nav__link">Small Business</a>
+            </li>
+          
+            <!-- #clrWhiteList{
+  color: #fff;
+}
+ -->
+            <li class="nav__list-item">
+              <a id="clrWhiteList" href="#" class="nav__link"> Investing</a>
+            </li>
+            <li class="nav__list-item">
+              <a id="clrWhiteList" href="#" class="nav__link"> Sign in</a>
+            </li>
+            <li class="nav__list-item">
+              <a id="clrWhiteList" href="#" id="bold" class="nav__link"> ...</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </nav>
+
     <header class="hero-cards">
         <div class="hero-cards-content">
             <div class="hero-cards-content-left">
@@ -509,8 +609,7 @@
         </div>
        </footer>  
     
-  
+       <script src="/js/myindex.js"></script>
     </main>
-    <script src="/js/myindex.js"></script>
   </body>
 </html>
