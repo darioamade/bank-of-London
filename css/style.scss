@@ -553,6 +553,7 @@ body {
 
 .card-container {
   background-color: rgb(2, 2, 2);
+  background-color: #1c1c1c;
   // background: url("/css/img/card-black.png") center/cover no-repeat;
   padding: 4rem;
   position: relative;
@@ -855,7 +856,8 @@ body {
 /* --------------- End of Navbar ---------------- */
 /* --------------- SECTIONS OPTIONS ---------------- */
 
-.options {
+.options ,
+.options-2{
   background-color: var(--color-grey);
   max-width: 144rem;
   margin: 0 auto;
@@ -896,6 +898,9 @@ body {
   }
 }
 
+.options-2{
+  background-color: #1c1c1c;
+}
 .compare {
   margin: 0 auto;
   max-width: 144rem;
@@ -1400,6 +1405,35 @@ pre {
   font-weight: 500;
   position: relative;
 }
+
+#tax-2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: relative;
+  color: #ebe8e8;
+  width: 25%;
+  @media (max-width:700px){
+    width: 85%;
+  }
+
+}
+#tax-3{
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  color: #c2c0c0;
+  width: 60%;
+  @media (max-width:700px){
+    display: none;
+  }
+  
+}
+#tax-4{
+  color: #c2c0c0;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
 
 #rate::after,
 #apr::after,
@@ -2017,4 +2051,48 @@ pre {
     background: url("/css/img/merc.jpg") center/cover no-repeat;
     min-height: 30vh;
   }
+}
+
+
+.applynow {
+  background-color: #1c1c1c;
+  padding: 6rem 0 0 0 ;
+  width:100%;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  h2{
+    font-family: "AvantGarde", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing:1px;
+    color: rgb(172, 168, 168);
+
+  }
+
+}
+
+
+.getStarted-1 {
+  font-family: "AvantGarde", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing:1px;
+  color: rgb(235, 232, 232);
+}
+#colorBgChanger {
+  background-color: #1c1c1c;
+  color: rgb(255, 255, 255);
+}
+
+#colorWhite {
+ color: #fff;
+}
+
+#colorBgWhite {
+  background-color: #ffffff;
+
 }
