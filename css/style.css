@@ -1668,6 +1668,20 @@ pre {
           align-items: center;
 }
 
+@media (max-width: 650px) {
+  .purchase-2,
+  .purchase-3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem;
+  }
+}
+
 .purchase-3 {
   padding: 2rem 4rem;
 }
@@ -2694,5 +2708,88 @@ pre {
   font-weight: 400;
   letter-spacing: 0px;
   text-align: right;
+}
+
+/********************** car-model****************/
+.car-model {
+  background-color: #1c1c1c;
+  padding: 0 6rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 650px) {
+  .car-model {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.car-model-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 650px) {
+  .car-model-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.car-model-title h3 {
+  font-family: "AvantGarde", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #e9e7e7;
+  margin-bottom: 3rem;
+}
+
+.car-model-title p {
+  font-family: "AvantGarde", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #cbc6c6;
+  width: 70%;
+  margin-bottom: 3rem;
+}
+
+.car-model-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  background: url("/css/img/merc.jpg") center/cover no-repeat;
+  min-height: 30vh;
 }
 /*# sourceMappingURL=style.css.map */
